@@ -1,0 +1,181 @@
+What I recommend for v3.1
+
+Rather than adding isolated features, I'd focus on making Buster behave like a real AI operating environment.
+
+1. AI Task Scheduler
+
+Allow long-running jobs without blocking interaction.
+
+Examples:
+
+Build my Android app
+
+Buster would:
+
+create a task
+monitor progress
+continue chatting while it runs
+notify you when finished
+2. Repository Understanding
+
+Instead of reading one file at a time, Buster builds a project model.
+
+For example:
+
+Project Index
+
+Classes: 418
+Functions: 2,941
+Files: 186
+
+Dependencies
+Call graph
+Imports
+TODOs
+Tests
+
+This would let you ask:
+
+Where is the ESP32 uploader?
+
+or
+
+Find every function that uses OpenRouter.
+3. Real Memory
+
+Instead of just storing conversations, memory becomes searchable knowledge.
+
+Examples:
+
+Remember my Arduino COM port.
+
+Remember that my browser is Firefox.
+
+Remember I use Android Studio.
+
+Then:
+
+What IDE do I use?
+
+Open my browser.
+
+works naturally.
+
+4. Desktop Automation 2.0
+
+Rather than only moving the mouse:
+
+Open Android Studio
+
+Wait for Gradle
+
+Click Run
+
+Watch the build
+
+Tell me if it fails
+
+using UI Automation.
+
+5. Builder Agent
+
+This is the feature I think will have the biggest impact for you.
+
+Instead of generating one file, the Builder would create an entire project.
+
+Example:
+
+Builder
+
+Create a weather app.
+
+
+It would automatically generate:
+
+main.py
+requirements.txt
+README.md
+config.py
+weather.py
+ui.py
+tests.py
+
+run it,
+
+fix errors,
+
+and repeat until it works.
+
+6. Buster Workspace
+
+A dashboard showing live activity:
+
+AI Planner
+
+Thinking...
+
+Builder
+
+Running
+
+Tester
+
+Waiting
+
+Vision
+
+Online
+
+Voice
+
+Listening
+
+Performance
+
+CPU 4%
+
+Memory
+
+248 MB
+7. Live Code Understanding
+
+When you open a project, Buster indexes it in the background.
+
+Then you can ask:
+
+Where is the vision engine?
+
+Show every plugin.
+
+Who calls AIPlanner?
+
+Find dead code.
+
+Which files are largest?
+
+Generate documentation.
+
+without waiting for a fresh scan each time.
+
+Buster 4.0
+
+Once those are in place, the next generation becomes possible:
+
+Multi-agent collaboration where Builder, Tester, Reviewer, Fixer, and Verifier work in parallel.
+Continuous background indexing of your projects.
+Native integration with Android Studio, VS Code, Arduino IDE, and Git.
+Voice-driven development workflows.
+Floating companion mode with expressive animations.
+Optional ESP32 desktop companion that mirrors Buster's expressions and status.
+My suggestion
+
+At this point, I would stop releasing incremental "patches" and start treating Buster like a professional software project:
+
+A proper Git repository with branches (main, develop, feature/*).
+Automated tests for core modules.
+Versioned releases (v3.1, v3.2, etc.).
+A plugin API with stable interfaces.
+Documentation generated from the codebase.
+A build pipeline that produces standalone Windows executables.
+
+That will make it much easier to keep expanding Buster without reintroducing the kinds of patch conflicts you ran into during v2.x. I think you've reached the stage where investing in architecture and tooling will pay off more than simply adding individual features.
