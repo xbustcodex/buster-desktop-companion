@@ -1,4 +1,4 @@
-# Buster Desktop Companion v3.0 Developer Edition
+# Buster Desktop Companion v6.3 Developer Edition
 
 Clean rebuild of Buster with a stable architecture.
 
