@@ -1,0 +1,3 @@
+@echo off
+echo Running Buster build checks...
+python -m pytest
