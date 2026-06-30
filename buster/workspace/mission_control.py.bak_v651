@@ -1,5 +1,4 @@
 from __future__ import annotations
-from buster.utils.datetime_utils import utc_now, utc_timestamp
 
 import json
 from datetime import datetime
@@ -24,7 +23,7 @@ class MissionControl:
             "learning_entries": 0,
             "last_decision": None,
             "last_strategy": None,
-            "updated_at": utc_now().replace(tzinfo=None).isoformat() + "Z",
+            "updated_at": datetime.utcnow().isoformat() + "Z",
         }
 
     def load(self) -> Dict[str, Any]:
@@ -37,7 +36,7 @@ class MissionControl:
         return self.default_state()
 
     def save(self, data: Dict[str, Any]) -> None:
-        data["updated_at"] = utc_now().replace(tzinfo=None).isoformat() + "Z"
+        data["updated_at"] = datetime.utcnow().isoformat() + "Z"
         self.state_path.write_text(json.dumps(data, indent=2), encoding="utf-8")
 
     def update_from_reasoning(self, reasoning_result: Dict[str, Any]) -> Dict[str, Any]:

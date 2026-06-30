@@ -1,4 +1,3 @@
-from buster.utils.datetime_utils import utc_now, utc_timestamp
 import json
 from datetime import datetime
 from pathlib import Path
@@ -33,7 +32,7 @@ class MissionControlDashboard:
             learning_entries=int(metrics.get("learning_entries") or 0),
             experience_entries=int(metrics.get("experience_entries") or 0),
             skills_tracked=int(metrics.get("skills_tracked") or 0),
-            last_updated=utc_now().replace(tzinfo=None).isoformat(timespec="seconds"),
+            last_updated=datetime.utcnow().isoformat(timespec="seconds"),
         ).to_dict()
 
         health = self.system_health(status)

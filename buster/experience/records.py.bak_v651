@@ -1,12 +1,11 @@
 from __future__ import annotations
-from buster.utils.datetime_utils import utc_now, utc_timestamp
 from dataclasses import dataclass, asdict, field
 from datetime import datetime
 from typing import Any, Dict, List
 import uuid
 
 def _now() -> str:
-    return utc_timestamp()
+    return datetime.utcnow().replace(microsecond=0).isoformat() + "Z"
 
 @dataclass
 class ExperienceRecord:

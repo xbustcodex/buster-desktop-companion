@@ -1,6 +1,5 @@
 
 from __future__ import annotations
-from buster.utils.datetime_utils import utc_now, utc_timestamp
 
 from dataclasses import dataclass, asdict
 from datetime import datetime, timezone

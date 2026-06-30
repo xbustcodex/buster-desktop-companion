@@ -1,0 +1,18 @@
+from __future__ import annotations
+
+from datetime import UTC, datetime
+
+
+def utc_now() -> datetime:
+    """Return timezone-aware current UTC datetime."""
+    return datetime.now(UTC)
+
+
+def utc_timestamp(timespec: str = "seconds") -> str:
+    """Return ISO UTC timestamp ending in Z."""
+    return (
+        datetime.now(UTC)
+        .replace(microsecond=0 if timespec == "seconds" else datetime.now(UTC).microsecond)
+        .isoformat(timespec=timespec)
+        .replace("+00:00", "Z")
+    )

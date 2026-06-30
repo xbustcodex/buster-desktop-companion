@@ -2,13 +2,12 @@ from __future__ import annotations
 
 from dataclasses import dataclass, field, asdict
 from datetime import datetime
-from buster.utils.datetime_utils import utc_timestamp
 from typing import Any, Dict, List
 import uuid
 
 
 def utc_now() -> str:
-    return utc_timestamp()
+    return datetime.utcnow().replace(microsecond=0).isoformat() + "Z"
 
 
 @dataclass

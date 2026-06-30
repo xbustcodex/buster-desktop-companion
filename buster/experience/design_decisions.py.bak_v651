@@ -1,12 +1,11 @@
 from __future__ import annotations
-from buster.utils.datetime_utils import utc_now, utc_timestamp
 from pathlib import Path
 from typing import Any, Dict, List
 from datetime import datetime
 from .storage import load_json, save_json
 
 def _now() -> str:
-    return utc_timestamp()
+    return datetime.utcnow().replace(microsecond=0).isoformat() + "Z"
 
 class DesignDecisionStore:
     """Stores architecture/design choices and ranks how well they work."""

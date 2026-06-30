@@ -1,4 +1,3 @@
-from buster.utils.datetime_utils import utc_now, utc_timestamp
 from dataclasses import dataclass, asdict
 from datetime import datetime
 from typing import Any, Dict, List
@@ -21,7 +20,7 @@ class MissionStatus:
     def to_dict(self) -> Dict[str, Any]:
         data = asdict(self)
         if not data.get("last_updated"):
-            data["last_updated"] = utc_now().replace(tzinfo=None).isoformat(timespec="seconds")
+            data["last_updated"] = datetime.utcnow().isoformat(timespec="seconds")
         return data
 
 
@@ -32,7 +31,7 @@ class MissionTimeline:
 
     def add(self, event_type: str, message: str, source: str = "mission_control") -> Dict[str, Any]:
         item = {
-            "time": utc_now().replace(tzinfo=None).isoformat(timespec="seconds"),
+            "time": datetime.utcnow().isoformat(timespec="seconds"),
             "event_type": event_type,
             "source": source,
             "message": message,
