@@ -145,7 +145,7 @@ Or download the latest pre-built Windows release from the **GitHub Releases** pa
 
 # Example Commands
 
-```
+```bat
 workspace
 performance
 system status
