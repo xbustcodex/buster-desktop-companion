@@ -256,4 +256,4 @@ main.py
 
 **Buster Desktop Companion v8.0 Developer Edition**
 
-Built with Python, PySide6, OpenCV, YOLO, SQLite and modern AI providers.
+Built with Python, PySide6, OpenCV, YOLO, SQLite.
