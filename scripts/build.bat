@@ -1,3 +1,3 @@
 @echo off
-echo Running Buster build checks...
+cd /d "%~dp0\.."
 python -m pytest

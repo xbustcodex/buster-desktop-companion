@@ -1,4 +1,8 @@
 from buster.brain.planner.planner import AIPlanner
+from buster.intelligence.project_intelligence import ProjectIntelligence
+from buster.repository.intelligence_service import RepositoryIntelligenceService
+from buster.updater.manager import UpdateManager
+from buster.version import VERSION
 
 class BrainEngine:
     def __init__(self, services, bus, logger):
@@ -8,6 +12,37 @@ class BrainEngine:
         self.planner = AIPlanner()
 
     def process(self, text: str):
+        cmd = text.strip().lower()
+        if cmd in ["check updates", "update status", "latest release"]:
+            return UpdateManager(current_version=VERSION).status_text()
+
+        repo_intel = RepositoryIntelligenceService(root=".")
+
+        if cmd in ["index project", "reindex project", "index repository", "repo index"]:
+            return repo_intel.index()
+
+        if cmd in ["project summary", "project index", "codebase summary", "repository summary", "repo summary"]:
+            return repo_intel.summary()
+
+        if cmd in ["show todos", "show todo", "todos", "todo list"]:
+            return repo_intel.todos()
+
+        if cmd.startswith("find symbol "):
+            return repo_intel.find_symbol(text[len("find symbol "):].strip())
+
+        if cmd.startswith("find references "):
+            return repo_intel.find_references(text[len("find references "):].strip())
+
+        if cmd.startswith("imports of "):
+            return repo_intel.imports_of(text[len("imports of "):].strip())
+
+        if cmd.startswith("where is "):
+            return repo_intel.where_is(text[len("where is "):].strip())
+
+        if cmd in ["changed since index", "what changed since index"]:
+            return repo_intel.changed_since_index()
+
+
         text = text.strip()
         if not text: return "I am online."
         self.services.get("memory").add("user", text)

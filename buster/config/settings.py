@@ -3,8 +3,8 @@ from pathlib import Path
 
 @dataclass
 class Settings:
-    app_name: str = "BUSTER"
-    version: str = "3.0.0-dev"
+    app_name: str = "Buster Companion"
+    version: str = "8.0"
     wake_word: str = "hey buster"
 
     data_dir: Path = Path("data")

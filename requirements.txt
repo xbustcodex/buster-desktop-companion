@@ -12,3 +12,5 @@ pillow==10.4.0
 requests==2.32.3
 ultralytics
 pyzbar
+packaging
+lap>=0.5.12

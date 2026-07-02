@@ -5,6 +5,10 @@ from buster.ui.widgets.panel import Panel
 from buster.ui.widgets.face import FaceWidget
 from buster.ui.widgets.service_card import ServiceCard
 from buster.ui.widgets.vision_window import VisionWindow
+from buster.ui.settings_dialog import SettingsDialog
+from buster.core.settings_store import SettingsStore
+
+
 
 class UiBridge(QObject):
     voice_command = Signal(str)
@@ -17,6 +21,7 @@ class MainWindow(QMainWindow):
     def __init__(self, settings, state, services, bus):
         super().__init__()
         self.settings, self.state, self.services, self.bus = settings, state, services, bus
+        SettingsStore().load_into(self.settings)
         self.vision_window = VisionWindow(self.services.get("vision"))
         self.bridge = UiBridge()
         self.bridge.voice_command.connect(self.handle_voice_command)
@@ -51,7 +56,23 @@ class MainWindow(QMainWindow):
         root = QWidget(); self.setCentralWidget(root); outer = QHBoxLayout(root)
         side = QVBoxLayout()
         title = QLabel(f"{self.settings.app_name} {self.settings.version}"); title.setObjectName("Title"); side.addWidget(title)
-        for label, cmd in [("Workspace","workspace"),("Performance","performance"),("Tasks","tasks"),("Index Project","index project"),("Repo Status","repo status"),("AI Status","ai status"),("Use Local","use local"),("Use Ollama","use ollama"),("Listen Once","listen once"),("Conversation","start conversation"),("Browser","open my browser"),("Vision","start vision"),("Agents","agents"),("System","system status")]:
+        for label, cmd in [
+            ("Workspace","workspace"),
+            ("Performance","performance"),
+            ("Tasks","tasks"),
+            ("Index Project","index project"),
+            ("Repo Status","repo status"),
+            ("AI Status","ai status"),
+            ("Use Local","use local"),
+            ("Use Ollama","use ollama"),
+            ("Listen Once","listen once"),
+            ("Conversation","start conversation"),
+            ("Browser","open my browser"),
+            ("Vision","start vision"),
+            ("Agents","agents"),
+            ("Settings","settings"),          # NEW
+            ("System","system status")
+]:
             b = QPushButton(label); b.clicked.connect(lambda checked=False, c=cmd: self.run_command(c)); side.addWidget(b)
         side.addStretch(); compact = QPushButton("Compact"); compact.clicked.connect(self.toggle_compact); side.addWidget(compact)
 
@@ -100,6 +121,30 @@ class MainWindow(QMainWindow):
 
     def run_command(self, text):
         self.chat.append(f"You: {text}"); self.set_mode("thinking")
+        cmd = text.strip().lower()
+
+        if cmd in ["settings", "open settings"]:
+            dlg = SettingsDialog(self.settings, self)
+
+            if dlg.exec():
+                values = dlg.get_values()
+
+                self.settings.always_on_top = values["always_on_top"]
+                self.settings.wake_word = values["wake_word"]
+                self.settings.data_dir = values["data_dir"]
+                self.settings.logs_dir = values["logs_dir"]
+                self.settings.screenshots_dir = values["screenshots_dir"]
+
+                store = SettingsStore()
+                store.save(self.settings)
+
+                self.chat.append(
+                    f"Buster: Settings saved.\n{store.path.resolve()}"
+                )
+
+            self.set_mode("standby")
+            return
+        
         main_thread_commands = {"start vision","show vision","open vision","start camera","show camera","open camera","stop vision","hide vision","stop camera"}
         if text.strip().lower() in main_thread_commands:
             try: reply = self.services.get("brain").process(text)

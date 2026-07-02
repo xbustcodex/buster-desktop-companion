@@ -1,3 +1,3 @@
 @echo off
-echo Benchmark placeholder: running test suite timing.
-python -m pytest
+cd /d "%~dp0\.."
+python -m pytest --durations=20
