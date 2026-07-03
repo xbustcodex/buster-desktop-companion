@@ -1,5 +1,5 @@
 {
-  "built_at": "2026-07-02T15:34:50",
+  "built_at": "2026-07-03T11:39:56",
   "root": "C:\\Users\\xkali\\new_ai\\buster-desktop-companion",
   "files": [
     ".gitignore",
@@ -17,6 +17,7 @@
     "BUSTER_V6_5_AUTONOMOUS_MISSION_RUNTIME.md",
     "BUSTER_V6_FOUNDATION.md",
     "BUSTER_V7_0_LIVING_AI_COMPANION.md",
+    "fix_all_scripts_and_git.bat",
     "fix_v8_1_update_manager_and_brain.py",
     "main.py",
     "pytest.ini",
@@ -38,6 +39,7 @@
     "data\\ai_os_architecture_state.json",
     "data\\ai_os_status.json",
     "data\\ai_provider_config.json",
+    "data\\approved_folders.json",
     "data\\apps_cache.json",
     "data\\attention_events.json",
     "data\\attention_focus.json",
@@ -320,6 +322,11 @@
     "buster\\multi_agent\\messages.py",
     "buster\\multi_agent\\negotiation.py",
     "buster\\multi_agent\\__init__.py",
+    "buster\\os_layer\\approved_folders.py",
+    "buster\\os_layer\\filesystem.py",
+    "buster\\os_layer\\os_layer.py",
+    "buster\\os_layer\\windows_system.py",
+    "buster\\os_layer\\__init__.py",
     "buster\\perception\\attention.py",
     "buster\\perception\\audio_learning.py",
     "buster\\perception\\cognitive_loop_bridge.py",
@@ -455,6 +462,7 @@
     "buster\\workspace\\perception_dashboard.py",
     "buster\\workspace\\presence_dashboard.py",
     "buster\\workspace\\proactive_speech_dashboard.py",
+    "buster\\workspace\\runtime.py",
     "buster\\workspace\\runtime_dashboard.py",
     "buster\\workspace\\working_memory_goal_dashboard.py",
     "buster\\workspace\\workspace_awareness_dashboard.py",
@@ -710,7 +718,7 @@
     {
       "name": "BrainEngine",
       "file": "buster\\brain\\engine.py",
-      "line": 7
+      "line": 9
     },
     {
       "name": "OrchestrationPlan",
@@ -1458,6 +1466,26 @@
       "line": 5
     },
     {
+      "name": "ApprovedFolders",
+      "file": "buster\\os_layer\\approved_folders.py",
+      "line": 4
+    },
+    {
+      "name": "FileSystemAccess",
+      "file": "buster\\os_layer\\filesystem.py",
+      "line": 16
+    },
+    {
+      "name": "OSLayer",
+      "file": "buster\\os_layer\\os_layer.py",
+      "line": 4
+    },
+    {
+      "name": "WindowsSystemAccess",
+      "file": "buster\\os_layer\\windows_system.py",
+      "line": 4
+    },
+    {
       "name": "AttentionSystem",
       "file": "buster\\perception\\attention.py",
       "line": 1
@@ -2111,6 +2139,11 @@
       "name": "ProactiveSpeechDashboard",
       "file": "buster\\workspace\\proactive_speech_dashboard.py",
       "line": 11
+    },
+    {
+      "name": "WorkspaceSnapshot",
+      "file": "buster\\workspace\\runtime.py",
+      "line": 6
     },
     {
       "name": "RuntimeDashboard",
@@ -3162,22 +3195,22 @@
     {
       "name": "__init__",
       "file": "buster\\brain\\engine.py",
-      "line": 8
+      "line": 10
     },
     {
       "name": "process",
       "file": "buster\\brain\\engine.py",
-      "line": 14
+      "line": 16
     },
     {
       "name": "execute",
       "file": "buster\\brain\\engine.py",
-      "line": 62
+      "line": 85
     },
     {
       "name": "build_context",
       "file": "buster\\brain\\engine.py",
-      "line": 119
+      "line": 142
     },
     {
       "name": "fuse_local_and_web",
@@ -5880,6 +5913,126 @@
       "line": 9
     },
     {
+      "name": "__init__",
+      "file": "buster\\os_layer\\approved_folders.py",
+      "line": 5
+    },
+    {
+      "name": "defaults",
+      "file": "buster\\os_layer\\approved_folders.py",
+      "line": 8
+    },
+    {
+      "name": "load",
+      "file": "buster\\os_layer\\approved_folders.py",
+      "line": 20
+    },
+    {
+      "name": "save",
+      "file": "buster\\os_layer\\approved_folders.py",
+      "line": 29
+    },
+    {
+      "name": "add",
+      "file": "buster\\os_layer\\approved_folders.py",
+      "line": 40
+    },
+    {
+      "name": "remove",
+      "file": "buster\\os_layer\\approved_folders.py",
+      "line": 53
+    },
+    {
+      "name": "list_text",
+      "file": "buster\\os_layer\\approved_folders.py",
+      "line": 60
+    },
+    {
+      "name": "__init__",
+      "file": "buster\\os_layer\\filesystem.py",
+      "line": 17
+    },
+    {
+      "name": "roots",
+      "file": "buster\\os_layer\\filesystem.py",
+      "line": 20
+    },
+    {
+      "name": "is_approved",
+      "file": "buster\\os_layer\\filesystem.py",
+      "line": 23
+    },
+    {
+      "name": "should_skip",
+      "file": "buster\\os_layer\\filesystem.py",
+      "line": 33
+    },
+    {
+      "name": "list_folder",
+      "file": "buster\\os_layer\\filesystem.py",
+      "line": 38
+    },
+    {
+      "name": "find_files",
+      "file": "buster\\os_layer\\filesystem.py",
+      "line": 54
+    },
+    {
+      "name": "open_path",
+      "file": "buster\\os_layer\\filesystem.py",
+      "line": 85
+    },
+    {
+      "name": "read_file",
+      "file": "buster\\os_layer\\filesystem.py",
+      "line": 97
+    },
+    {
+      "name": "disk_usage",
+      "file": "buster\\os_layer\\filesystem.py",
+      "line": 119
+    },
+    {
+      "name": "approve_folder",
+      "file": "buster\\os_layer\\filesystem.py",
+      "line": 134
+    },
+    {
+      "name": "remove_folder",
+      "file": "buster\\os_layer\\filesystem.py",
+      "line": 137
+    },
+    {
+      "name": "approved_folders",
+      "file": "buster\\os_layer\\filesystem.py",
+      "line": 140
+    },
+    {
+      "name": "__init__",
+      "file": "buster\\os_layer\\os_layer.py",
+      "line": 5
+    },
+    {
+      "name": "handle",
+      "file": "buster\\os_layer\\os_layer.py",
+      "line": 9
+    },
+    {
+      "name": "env_summary",
+      "file": "buster\\os_layer\\windows_system.py",
+      "line": 5
+    },
+    {
+      "name": "where_python",
+      "file": "buster\\os_layer\\windows_system.py",
+      "line": 9
+    },
+    {
+      "name": "running_processes",
+      "file": "buster\\os_layer\\windows_system.py",
+      "line": 16
+    },
+    {
       "name": "choose_focus",
       "file": "buster\\perception\\attention.py",
       "line": 2
@@ -8205,6 +8358,61 @@
       "line": 15
     },
     {
+      "name": "__init__",
+      "file": "buster\\workspace\\runtime.py",
+      "line": 8
+    },
+    {
+      "name": "_run",
+      "file": "buster\\workspace\\runtime.py",
+      "line": 11
+    },
+    {
+      "name": "git_branch",
+      "file": "buster\\workspace\\runtime.py",
+      "line": 23
+    },
+    {
+      "name": "git_status",
+      "file": "buster\\workspace\\runtime.py",
+      "line": 26
+    },
+    {
+      "name": "python_info",
+      "file": "buster\\workspace\\runtime.py",
+      "line": 30
+    },
+    {
+      "name": "approved_folders",
+      "file": "buster\\workspace\\runtime.py",
+      "line": 33
+    },
+    {
+      "name": "build_exists",
+      "file": "buster\\workspace\\runtime.py",
+      "line": 45
+    },
+    {
+      "name": "installer_exists",
+      "file": "buster\\workspace\\runtime.py",
+      "line": 48
+    },
+    {
+      "name": "project_index_exists",
+      "file": "buster\\workspace\\runtime.py",
+      "line": 51
+    },
+    {
+      "name": "settings_exists",
+      "file": "buster\\workspace\\runtime.py",
+      "line": 54
+    },
+    {
+      "name": "snapshot",
+      "file": "buster\\workspace\\runtime.py",
+      "line": 57
+    },
+    {
       "name": "snapshot",
       "file": "buster\\workspace\\runtime_dashboard.py",
       "line": 6
@@ -9950,6 +10158,16 @@
       "name": "buster.version",
       "file": "buster\\brain\\engine.py",
       "line": 5
+    },
+    {
+      "name": "buster.os_layer.os_layer",
+      "file": "buster\\brain\\engine.py",
+      "line": 6
+    },
+    {
+      "name": "buster.workspace.runtime",
+      "file": "buster\\brain\\engine.py",
+      "line": 7
     },
     {
       "name": "__future__",
@@ -12767,6 +12985,56 @@
       "line": 5
     },
     {
+      "name": "json",
+      "file": "buster\\os_layer\\approved_folders.py",
+      "line": 1
+    },
+    {
+      "name": "pathlib",
+      "file": "buster\\os_layer\\approved_folders.py",
+      "line": 2
+    },
+    {
+      "name": "pathlib",
+      "file": "buster\\os_layer\\filesystem.py",
+      "line": 1
+    },
+    {
+      "name": "os",
+      "file": "buster\\os_layer\\filesystem.py",
+      "line": 2
+    },
+    {
+      "name": "shutil",
+      "file": "buster\\os_layer\\filesystem.py",
+      "line": 3
+    },
+    {
+      "name": "buster.os_layer.approved_folders",
+      "file": "buster\\os_layer\\filesystem.py",
+      "line": 4
+    },
+    {
+      "name": "buster.os_layer.filesystem",
+      "file": "buster\\os_layer\\os_layer.py",
+      "line": 1
+    },
+    {
+      "name": "buster.os_layer.windows_system",
+      "file": "buster\\os_layer\\os_layer.py",
+      "line": 2
+    },
+    {
+      "name": "os",
+      "file": "buster\\os_layer\\windows_system.py",
+      "line": 1
+    },
+    {
+      "name": "subprocess",
+      "file": "buster\\os_layer\\windows_system.py",
+      "line": 2
+    },
+    {
       "name": "__future__",
       "file": "buster\\perception\\cognitive_loop_bridge.py",
       "line": 1
@@ -14995,6 +15263,26 @@
       "name": "buster.conversation_os",
       "file": "buster\\workspace\\proactive_speech_dashboard.py",
       "line": 6
+    },
+    {
+      "name": "pathlib",
+      "file": "buster\\workspace\\runtime.py",
+      "line": 1
+    },
+    {
+      "name": "subprocess",
+      "file": "buster\\workspace\\runtime.py",
+      "line": 2
+    },
+    {
+      "name": "sys",
+      "file": "buster\\workspace\\runtime.py",
+      "line": 3
+    },
+    {
+      "name": "json",
+      "file": "buster\\workspace\\runtime.py",
+      "line": 4
     },
     {
       "name": "__future__",

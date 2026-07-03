@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-07-02T05:34:48+00:00",
+  "timestamp": "2026-07-03T01:39:55+00:00",
   "attention": {
     "current_focus": {
       "source": "camera",
@@ -9,7 +9,7 @@
       "importance": 0.8,
       "urgency": 0.6,
       "confidence": 0.8,
-      "timestamp": "2026-07-02T05:34:48+00:00",
+      "timestamp": "2026-07-03T01:39:55+00:00",
       "priority": 0.91,
       "focused": true
     },
@@ -22,126 +22,6 @@
         "importance": 0.9,
         "urgency": 0.85,
         "confidence": 0.95,
-        "timestamp": "2026-07-01T05:19:03+00:00",
-        "priority": 1.0,
-        "focused": true
-      },
-      {
-        "source": "camera",
-        "kind": "user_returned",
-        "title": "User returned to desk",
-        "details": "",
-        "importance": 0.8,
-        "urgency": 0.6,
-        "confidence": 0.8,
-        "timestamp": "2026-07-01T05:19:03+00:00",
-        "priority": 0.91,
-        "focused": true
-      },
-      {
-        "source": "ears",
-        "kind": "wake_word",
-        "title": "Adam said Buster",
-        "details": "Wake word detected by microphone",
-        "importance": 0.9,
-        "urgency": 0.85,
-        "confidence": 0.95,
-        "timestamp": "2026-07-01T05:57:43+00:00",
-        "priority": 1.0,
-        "focused": true
-      },
-      {
-        "source": "camera",
-        "kind": "user_returned",
-        "title": "User returned to desk",
-        "details": "",
-        "importance": 0.8,
-        "urgency": 0.6,
-        "confidence": 0.8,
-        "timestamp": "2026-07-01T05:57:43+00:00",
-        "priority": 0.91,
-        "focused": true
-      },
-      {
-        "source": "ears",
-        "kind": "wake_word",
-        "title": "Adam said Buster",
-        "details": "Wake word detected by microphone",
-        "importance": 0.9,
-        "urgency": 0.85,
-        "confidence": 0.95,
-        "timestamp": "2026-07-01T05:58:51+00:00",
-        "priority": 1.0,
-        "focused": true
-      },
-      {
-        "source": "camera",
-        "kind": "user_returned",
-        "title": "User returned to desk",
-        "details": "",
-        "importance": 0.8,
-        "urgency": 0.6,
-        "confidence": 0.8,
-        "timestamp": "2026-07-01T05:58:51+00:00",
-        "priority": 0.91,
-        "focused": true
-      },
-      {
-        "source": "ears",
-        "kind": "wake_word",
-        "title": "Adam said Buster",
-        "details": "Wake word detected by microphone",
-        "importance": 0.9,
-        "urgency": 0.85,
-        "confidence": 0.95,
-        "timestamp": "2026-07-01T06:04:44+00:00",
-        "priority": 1.0,
-        "focused": true
-      },
-      {
-        "source": "camera",
-        "kind": "user_returned",
-        "title": "User returned to desk",
-        "details": "",
-        "importance": 0.8,
-        "urgency": 0.6,
-        "confidence": 0.8,
-        "timestamp": "2026-07-01T06:04:44+00:00",
-        "priority": 0.91,
-        "focused": true
-      },
-      {
-        "source": "ears",
-        "kind": "wake_word",
-        "title": "Adam said Buster",
-        "details": "Wake word detected by microphone",
-        "importance": 0.9,
-        "urgency": 0.85,
-        "confidence": 0.95,
-        "timestamp": "2026-07-01T06:06:15+00:00",
-        "priority": 1.0,
-        "focused": true
-      },
-      {
-        "source": "camera",
-        "kind": "user_returned",
-        "title": "User returned to desk",
-        "details": "",
-        "importance": 0.8,
-        "urgency": 0.6,
-        "confidence": 0.8,
-        "timestamp": "2026-07-01T06:06:15+00:00",
-        "priority": 0.91,
-        "focused": true
-      },
-      {
-        "source": "ears",
-        "kind": "wake_word",
-        "title": "Adam said Buster",
-        "details": "Wake word detected by microphone",
-        "importance": 0.9,
-        "urgency": 0.85,
-        "confidence": 0.95,
         "timestamp": "2026-07-01T06:12:21+00:00",
         "priority": 1.0,
         "focused": true
@@ -611,11 +491,131 @@
         "urgency": 0.6,
         "confidence": 0.8,
         "timestamp": "2026-07-02T05:34:48+00:00",
+        "priority": 0.91,
+        "focused": true
+      },
+      {
+        "source": "ears",
+        "kind": "wake_word",
+        "title": "Adam said Buster",
+        "details": "Wake word detected by microphone",
+        "importance": 0.9,
+        "urgency": 0.85,
+        "confidence": 0.95,
+        "timestamp": "2026-07-02T06:43:11+00:00",
+        "priority": 1.0,
+        "focused": true
+      },
+      {
+        "source": "camera",
+        "kind": "user_returned",
+        "title": "User returned to desk",
+        "details": "",
+        "importance": 0.8,
+        "urgency": 0.6,
+        "confidence": 0.8,
+        "timestamp": "2026-07-02T06:43:11+00:00",
+        "priority": 0.91,
+        "focused": true
+      },
+      {
+        "source": "ears",
+        "kind": "wake_word",
+        "title": "Adam said Buster",
+        "details": "Wake word detected by microphone",
+        "importance": 0.9,
+        "urgency": 0.85,
+        "confidence": 0.95,
+        "timestamp": "2026-07-02T07:10:07+00:00",
+        "priority": 1.0,
+        "focused": true
+      },
+      {
+        "source": "camera",
+        "kind": "user_returned",
+        "title": "User returned to desk",
+        "details": "",
+        "importance": 0.8,
+        "urgency": 0.6,
+        "confidence": 0.8,
+        "timestamp": "2026-07-02T07:10:07+00:00",
+        "priority": 0.91,
+        "focused": true
+      },
+      {
+        "source": "ears",
+        "kind": "wake_word",
+        "title": "Adam said Buster",
+        "details": "Wake word detected by microphone",
+        "importance": 0.9,
+        "urgency": 0.85,
+        "confidence": 0.95,
+        "timestamp": "2026-07-02T07:54:40+00:00",
+        "priority": 1.0,
+        "focused": true
+      },
+      {
+        "source": "camera",
+        "kind": "user_returned",
+        "title": "User returned to desk",
+        "details": "",
+        "importance": 0.8,
+        "urgency": 0.6,
+        "confidence": 0.8,
+        "timestamp": "2026-07-02T07:54:40+00:00",
+        "priority": 0.91,
+        "focused": true
+      },
+      {
+        "source": "ears",
+        "kind": "wake_word",
+        "title": "Adam said Buster",
+        "details": "Wake word detected by microphone",
+        "importance": 0.9,
+        "urgency": 0.85,
+        "confidence": 0.95,
+        "timestamp": "2026-07-03T01:09:20+00:00",
+        "priority": 1.0,
+        "focused": true
+      },
+      {
+        "source": "camera",
+        "kind": "user_returned",
+        "title": "User returned to desk",
+        "details": "",
+        "importance": 0.8,
+        "urgency": 0.6,
+        "confidence": 0.8,
+        "timestamp": "2026-07-03T01:09:20+00:00",
+        "priority": 0.91,
+        "focused": true
+      },
+      {
+        "source": "ears",
+        "kind": "wake_word",
+        "title": "Adam said Buster",
+        "details": "Wake word detected by microphone",
+        "importance": 0.9,
+        "urgency": 0.85,
+        "confidence": 0.95,
+        "timestamp": "2026-07-03T01:39:55+00:00",
+        "priority": 1.0,
+        "focused": true
+      },
+      {
+        "source": "camera",
+        "kind": "user_returned",
+        "title": "User returned to desk",
+        "details": "",
+        "importance": 0.8,
+        "urgency": 0.6,
+        "confidence": 0.8,
+        "timestamp": "2026-07-03T01:39:55+00:00",
         "priority": 0.91,
         "focused": true
       }
     ],
-    "updated": "2026-07-02T05:34:48+00:00"
+    "updated": "2026-07-03T01:39:55+00:00"
   },
   "working_memory": {
     "active_items": 12,
@@ -632,12 +632,12 @@
           "importance": 0.9,
           "urgency": 0.85,
           "confidence": 0.95,
-          "timestamp": "2026-07-02T05:34:48+00:00",
+          "timestamp": "2026-07-03T01:39:55+00:00",
           "priority": 1.0,
           "focused": true
         },
         "priority": 1.0,
-        "timestamp": "2026-07-02T05:34:48+00:00"
+        "timestamp": "2026-07-03T01:39:55+00:00"
       },
       {
         "type": "attention_event",
@@ -650,12 +650,12 @@
           "importance": 0.9,
           "urgency": 0.85,
           "confidence": 0.95,
-          "timestamp": "2026-07-02T05:08:10+00:00",
+          "timestamp": "2026-07-03T01:09:20+00:00",
           "priority": 1.0,
           "focused": true
         },
         "priority": 1.0,
-        "timestamp": "2026-07-02T05:08:10+00:00"
+        "timestamp": "2026-07-03T01:09:20+00:00"
       },
       {
         "type": "attention_event",
@@ -668,12 +668,12 @@
           "importance": 0.9,
           "urgency": 0.85,
           "confidence": 0.95,
-          "timestamp": "2026-07-02T04:36:58+00:00",
+          "timestamp": "2026-07-02T07:54:40+00:00",
           "priority": 1.0,
           "focused": true
         },
         "priority": 1.0,
-        "timestamp": "2026-07-02T04:36:58+00:00"
+        "timestamp": "2026-07-02T07:54:40+00:00"
       },
       {
         "type": "attention_event",
@@ -686,12 +686,12 @@
           "importance": 0.9,
           "urgency": 0.85,
           "confidence": 0.95,
-          "timestamp": "2026-07-02T03:57:35+00:00",
+          "timestamp": "2026-07-02T07:10:07+00:00",
           "priority": 1.0,
           "focused": true
         },
         "priority": 1.0,
-        "timestamp": "2026-07-02T03:57:35+00:00"
+        "timestamp": "2026-07-02T07:10:07+00:00"
       },
       {
         "type": "attention_event",
@@ -704,15 +704,15 @@
           "importance": 0.9,
           "urgency": 0.85,
           "confidence": 0.95,
-          "timestamp": "2026-07-02T03:37:38+00:00",
+          "timestamp": "2026-07-02T06:43:11+00:00",
           "priority": 1.0,
           "focused": true
         },
         "priority": 1.0,
-        "timestamp": "2026-07-02T03:37:38+00:00"
+        "timestamp": "2026-07-02T06:43:11+00:00"
       }
     ],
-    "updated": "2026-07-02T05:34:48+00:00"
+    "updated": "2026-07-03T01:39:55+00:00"
   },
   "active_goals": [
     {
@@ -778,7 +778,7 @@
   ],
   "curiosity_suggestions": [],
   "last_reflection": {
-    "timestamp": "2026-07-02T05:34:48+00:00",
+    "timestamp": "2026-07-03T01:39:55+00:00",
     "title": "Daily reflection",
     "summary": "Reviewed 10 recent mission events.",
     "recent_events": [
@@ -896,5 +896,5 @@
       "Promote repeated successful mission steps into reusable strategies."
     ]
   },
-  "updated": "2026-07-02T05:34:48+00:00"
+  "updated": "2026-07-03T01:39:55+00:00"
 }

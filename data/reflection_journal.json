@@ -6900,5 +6900,600 @@
     "recommendations": [
       "Promote repeated successful mission steps into reusable strategies."
     ]
+  },
+  {
+    "timestamp": "2026-07-02T06:43:11+00:00",
+    "title": "Daily reflection",
+    "summary": "Reviewed 10 recent mission events.",
+    "recent_events": [
+      {
+        "timestamp": "2026-06-29T07:09:22+00:00",
+        "mission_id": "default",
+        "event_type": "builder.generated_code",
+        "source": "Builder",
+        "agent": "Builder",
+        "message": "generated code: main.py",
+        "level": "info",
+        "confidence": 0.88,
+        "risk": "low",
+        "details": {}
+      },
+      {
+        "timestamp": "2026-06-29T07:09:22+00:00",
+        "mission_id": "default",
+        "event_type": "tester.found_failure",
+        "source": "Tester",
+        "agent": "Tester",
+        "message": "found 1 failure",
+        "level": "warning",
+        "confidence": null,
+        "risk": "medium",
+        "details": {}
+      },
+      {
+        "timestamp": "2026-06-29T07:09:22+00:00",
+        "mission_id": "default",
+        "event_type": "fixer.repaired_issue",
+        "source": "Fixer",
+        "agent": "Fixer",
+        "message": "repaired issue",
+        "level": "info",
+        "confidence": 0.82,
+        "risk": "unknown",
+        "details": {}
+      },
+      {
+        "timestamp": "2026-06-29T07:09:22+00:00",
+        "mission_id": "default",
+        "event_type": "verifier.approved_build",
+        "source": "Verifier",
+        "agent": "Verifier",
+        "message": "approved build",
+        "level": "info",
+        "confidence": null,
+        "risk": "unknown",
+        "details": {}
+      },
+      {
+        "timestamp": "2026-06-29T07:09:22+00:00",
+        "mission_id": "default",
+        "event_type": "learning.recorded_pattern",
+        "source": "Learning Engine",
+        "agent": "Learning Engine",
+        "message": "recorded new pattern",
+        "level": "info",
+        "confidence": null,
+        "risk": "unknown",
+        "details": {}
+      },
+      {
+        "timestamp": "2026-06-29T07:09:22+00:00",
+        "mission_id": "default",
+        "event_type": "experience.updated_skill",
+        "source": "Experience",
+        "agent": "Experience",
+        "message": "updated Python skill (+0.2%)",
+        "level": "info",
+        "confidence": null,
+        "risk": "unknown",
+        "details": {}
+      },
+      {
+        "timestamp": "2026-06-29T07:09:22+00:00",
+        "mission_id": "default",
+        "event_type": "planner.created_mission",
+        "source": "Planner",
+        "agent": "Planner",
+        "message": "created mission: Planner bridge build",
+        "level": "info",
+        "confidence": 0.91,
+        "risk": "low",
+        "details": {
+          "reason": "test"
+        }
+      },
+      {
+        "timestamp": "2026-06-29T07:09:22+00:00",
+        "mission_id": "default",
+        "event_type": "agent.builder.step",
+        "source": "Builder",
+        "agent": "Builder",
+        "message": "generated code",
+        "level": "info",
+        "confidence": 0.89,
+        "risk": "low",
+        "details": {}
+      }
+    ],
+    "skill_snapshot": {
+      "python_gui": {
+        "name": "python_gui",
+        "level": 1,
+        "confidence": 1.0,
+        "successes": 1,
+        "failures": 0,
+        "last_used": "2026-06-29T05:22:59Z"
+      }
+    },
+    "experience_records": 1,
+    "recommendations": [
+      "Promote repeated successful mission steps into reusable strategies."
+    ]
+  },
+  {
+    "timestamp": "2026-07-02T07:10:07+00:00",
+    "title": "Daily reflection",
+    "summary": "Reviewed 10 recent mission events.",
+    "recent_events": [
+      {
+        "timestamp": "2026-06-29T07:09:22+00:00",
+        "mission_id": "default",
+        "event_type": "builder.generated_code",
+        "source": "Builder",
+        "agent": "Builder",
+        "message": "generated code: main.py",
+        "level": "info",
+        "confidence": 0.88,
+        "risk": "low",
+        "details": {}
+      },
+      {
+        "timestamp": "2026-06-29T07:09:22+00:00",
+        "mission_id": "default",
+        "event_type": "tester.found_failure",
+        "source": "Tester",
+        "agent": "Tester",
+        "message": "found 1 failure",
+        "level": "warning",
+        "confidence": null,
+        "risk": "medium",
+        "details": {}
+      },
+      {
+        "timestamp": "2026-06-29T07:09:22+00:00",
+        "mission_id": "default",
+        "event_type": "fixer.repaired_issue",
+        "source": "Fixer",
+        "agent": "Fixer",
+        "message": "repaired issue",
+        "level": "info",
+        "confidence": 0.82,
+        "risk": "unknown",
+        "details": {}
+      },
+      {
+        "timestamp": "2026-06-29T07:09:22+00:00",
+        "mission_id": "default",
+        "event_type": "verifier.approved_build",
+        "source": "Verifier",
+        "agent": "Verifier",
+        "message": "approved build",
+        "level": "info",
+        "confidence": null,
+        "risk": "unknown",
+        "details": {}
+      },
+      {
+        "timestamp": "2026-06-29T07:09:22+00:00",
+        "mission_id": "default",
+        "event_type": "learning.recorded_pattern",
+        "source": "Learning Engine",
+        "agent": "Learning Engine",
+        "message": "recorded new pattern",
+        "level": "info",
+        "confidence": null,
+        "risk": "unknown",
+        "details": {}
+      },
+      {
+        "timestamp": "2026-06-29T07:09:22+00:00",
+        "mission_id": "default",
+        "event_type": "experience.updated_skill",
+        "source": "Experience",
+        "agent": "Experience",
+        "message": "updated Python skill (+0.2%)",
+        "level": "info",
+        "confidence": null,
+        "risk": "unknown",
+        "details": {}
+      },
+      {
+        "timestamp": "2026-06-29T07:09:22+00:00",
+        "mission_id": "default",
+        "event_type": "planner.created_mission",
+        "source": "Planner",
+        "agent": "Planner",
+        "message": "created mission: Planner bridge build",
+        "level": "info",
+        "confidence": 0.91,
+        "risk": "low",
+        "details": {
+          "reason": "test"
+        }
+      },
+      {
+        "timestamp": "2026-06-29T07:09:22+00:00",
+        "mission_id": "default",
+        "event_type": "agent.builder.step",
+        "source": "Builder",
+        "agent": "Builder",
+        "message": "generated code",
+        "level": "info",
+        "confidence": 0.89,
+        "risk": "low",
+        "details": {}
+      }
+    ],
+    "skill_snapshot": {
+      "python_gui": {
+        "name": "python_gui",
+        "level": 1,
+        "confidence": 1.0,
+        "successes": 1,
+        "failures": 0,
+        "last_used": "2026-06-29T05:22:59Z"
+      }
+    },
+    "experience_records": 1,
+    "recommendations": [
+      "Promote repeated successful mission steps into reusable strategies."
+    ]
+  },
+  {
+    "timestamp": "2026-07-02T07:54:40+00:00",
+    "title": "Daily reflection",
+    "summary": "Reviewed 10 recent mission events.",
+    "recent_events": [
+      {
+        "timestamp": "2026-06-29T07:09:22+00:00",
+        "mission_id": "default",
+        "event_type": "builder.generated_code",
+        "source": "Builder",
+        "agent": "Builder",
+        "message": "generated code: main.py",
+        "level": "info",
+        "confidence": 0.88,
+        "risk": "low",
+        "details": {}
+      },
+      {
+        "timestamp": "2026-06-29T07:09:22+00:00",
+        "mission_id": "default",
+        "event_type": "tester.found_failure",
+        "source": "Tester",
+        "agent": "Tester",
+        "message": "found 1 failure",
+        "level": "warning",
+        "confidence": null,
+        "risk": "medium",
+        "details": {}
+      },
+      {
+        "timestamp": "2026-06-29T07:09:22+00:00",
+        "mission_id": "default",
+        "event_type": "fixer.repaired_issue",
+        "source": "Fixer",
+        "agent": "Fixer",
+        "message": "repaired issue",
+        "level": "info",
+        "confidence": 0.82,
+        "risk": "unknown",
+        "details": {}
+      },
+      {
+        "timestamp": "2026-06-29T07:09:22+00:00",
+        "mission_id": "default",
+        "event_type": "verifier.approved_build",
+        "source": "Verifier",
+        "agent": "Verifier",
+        "message": "approved build",
+        "level": "info",
+        "confidence": null,
+        "risk": "unknown",
+        "details": {}
+      },
+      {
+        "timestamp": "2026-06-29T07:09:22+00:00",
+        "mission_id": "default",
+        "event_type": "learning.recorded_pattern",
+        "source": "Learning Engine",
+        "agent": "Learning Engine",
+        "message": "recorded new pattern",
+        "level": "info",
+        "confidence": null,
+        "risk": "unknown",
+        "details": {}
+      },
+      {
+        "timestamp": "2026-06-29T07:09:22+00:00",
+        "mission_id": "default",
+        "event_type": "experience.updated_skill",
+        "source": "Experience",
+        "agent": "Experience",
+        "message": "updated Python skill (+0.2%)",
+        "level": "info",
+        "confidence": null,
+        "risk": "unknown",
+        "details": {}
+      },
+      {
+        "timestamp": "2026-06-29T07:09:22+00:00",
+        "mission_id": "default",
+        "event_type": "planner.created_mission",
+        "source": "Planner",
+        "agent": "Planner",
+        "message": "created mission: Planner bridge build",
+        "level": "info",
+        "confidence": 0.91,
+        "risk": "low",
+        "details": {
+          "reason": "test"
+        }
+      },
+      {
+        "timestamp": "2026-06-29T07:09:22+00:00",
+        "mission_id": "default",
+        "event_type": "agent.builder.step",
+        "source": "Builder",
+        "agent": "Builder",
+        "message": "generated code",
+        "level": "info",
+        "confidence": 0.89,
+        "risk": "low",
+        "details": {}
+      }
+    ],
+    "skill_snapshot": {
+      "python_gui": {
+        "name": "python_gui",
+        "level": 1,
+        "confidence": 1.0,
+        "successes": 1,
+        "failures": 0,
+        "last_used": "2026-06-29T05:22:59Z"
+      }
+    },
+    "experience_records": 1,
+    "recommendations": [
+      "Promote repeated successful mission steps into reusable strategies."
+    ]
+  },
+  {
+    "timestamp": "2026-07-03T01:09:20+00:00",
+    "title": "Daily reflection",
+    "summary": "Reviewed 10 recent mission events.",
+    "recent_events": [
+      {
+        "timestamp": "2026-06-29T07:09:22+00:00",
+        "mission_id": "default",
+        "event_type": "builder.generated_code",
+        "source": "Builder",
+        "agent": "Builder",
+        "message": "generated code: main.py",
+        "level": "info",
+        "confidence": 0.88,
+        "risk": "low",
+        "details": {}
+      },
+      {
+        "timestamp": "2026-06-29T07:09:22+00:00",
+        "mission_id": "default",
+        "event_type": "tester.found_failure",
+        "source": "Tester",
+        "agent": "Tester",
+        "message": "found 1 failure",
+        "level": "warning",
+        "confidence": null,
+        "risk": "medium",
+        "details": {}
+      },
+      {
+        "timestamp": "2026-06-29T07:09:22+00:00",
+        "mission_id": "default",
+        "event_type": "fixer.repaired_issue",
+        "source": "Fixer",
+        "agent": "Fixer",
+        "message": "repaired issue",
+        "level": "info",
+        "confidence": 0.82,
+        "risk": "unknown",
+        "details": {}
+      },
+      {
+        "timestamp": "2026-06-29T07:09:22+00:00",
+        "mission_id": "default",
+        "event_type": "verifier.approved_build",
+        "source": "Verifier",
+        "agent": "Verifier",
+        "message": "approved build",
+        "level": "info",
+        "confidence": null,
+        "risk": "unknown",
+        "details": {}
+      },
+      {
+        "timestamp": "2026-06-29T07:09:22+00:00",
+        "mission_id": "default",
+        "event_type": "learning.recorded_pattern",
+        "source": "Learning Engine",
+        "agent": "Learning Engine",
+        "message": "recorded new pattern",
+        "level": "info",
+        "confidence": null,
+        "risk": "unknown",
+        "details": {}
+      },
+      {
+        "timestamp": "2026-06-29T07:09:22+00:00",
+        "mission_id": "default",
+        "event_type": "experience.updated_skill",
+        "source": "Experience",
+        "agent": "Experience",
+        "message": "updated Python skill (+0.2%)",
+        "level": "info",
+        "confidence": null,
+        "risk": "unknown",
+        "details": {}
+      },
+      {
+        "timestamp": "2026-06-29T07:09:22+00:00",
+        "mission_id": "default",
+        "event_type": "planner.created_mission",
+        "source": "Planner",
+        "agent": "Planner",
+        "message": "created mission: Planner bridge build",
+        "level": "info",
+        "confidence": 0.91,
+        "risk": "low",
+        "details": {
+          "reason": "test"
+        }
+      },
+      {
+        "timestamp": "2026-06-29T07:09:22+00:00",
+        "mission_id": "default",
+        "event_type": "agent.builder.step",
+        "source": "Builder",
+        "agent": "Builder",
+        "message": "generated code",
+        "level": "info",
+        "confidence": 0.89,
+        "risk": "low",
+        "details": {}
+      }
+    ],
+    "skill_snapshot": {
+      "python_gui": {
+        "name": "python_gui",
+        "level": 1,
+        "confidence": 1.0,
+        "successes": 1,
+        "failures": 0,
+        "last_used": "2026-06-29T05:22:59Z"
+      }
+    },
+    "experience_records": 1,
+    "recommendations": [
+      "Promote repeated successful mission steps into reusable strategies."
+    ]
+  },
+  {
+    "timestamp": "2026-07-03T01:39:55+00:00",
+    "title": "Daily reflection",
+    "summary": "Reviewed 10 recent mission events.",
+    "recent_events": [
+      {
+        "timestamp": "2026-06-29T07:09:22+00:00",
+        "mission_id": "default",
+        "event_type": "builder.generated_code",
+        "source": "Builder",
+        "agent": "Builder",
+        "message": "generated code: main.py",
+        "level": "info",
+        "confidence": 0.88,
+        "risk": "low",
+        "details": {}
+      },
+      {
+        "timestamp": "2026-06-29T07:09:22+00:00",
+        "mission_id": "default",
+        "event_type": "tester.found_failure",
+        "source": "Tester",
+        "agent": "Tester",
+        "message": "found 1 failure",
+        "level": "warning",
+        "confidence": null,
+        "risk": "medium",
+        "details": {}
+      },
+      {
+        "timestamp": "2026-06-29T07:09:22+00:00",
+        "mission_id": "default",
+        "event_type": "fixer.repaired_issue",
+        "source": "Fixer",
+        "agent": "Fixer",
+        "message": "repaired issue",
+        "level": "info",
+        "confidence": 0.82,
+        "risk": "unknown",
+        "details": {}
+      },
+      {
+        "timestamp": "2026-06-29T07:09:22+00:00",
+        "mission_id": "default",
+        "event_type": "verifier.approved_build",
+        "source": "Verifier",
+        "agent": "Verifier",
+        "message": "approved build",
+        "level": "info",
+        "confidence": null,
+        "risk": "unknown",
+        "details": {}
+      },
+      {
+        "timestamp": "2026-06-29T07:09:22+00:00",
+        "mission_id": "default",
+        "event_type": "learning.recorded_pattern",
+        "source": "Learning Engine",
+        "agent": "Learning Engine",
+        "message": "recorded new pattern",
+        "level": "info",
+        "confidence": null,
+        "risk": "unknown",
+        "details": {}
+      },
+      {
+        "timestamp": "2026-06-29T07:09:22+00:00",
+        "mission_id": "default",
+        "event_type": "experience.updated_skill",
+        "source": "Experience",
+        "agent": "Experience",
+        "message": "updated Python skill (+0.2%)",
+        "level": "info",
+        "confidence": null,
+        "risk": "unknown",
+        "details": {}
+      },
+      {
+        "timestamp": "2026-06-29T07:09:22+00:00",
+        "mission_id": "default",
+        "event_type": "planner.created_mission",
+        "source": "Planner",
+        "agent": "Planner",
+        "message": "created mission: Planner bridge build",
+        "level": "info",
+        "confidence": 0.91,
+        "risk": "low",
+        "details": {
+          "reason": "test"
+        }
+      },
+      {
+        "timestamp": "2026-06-29T07:09:22+00:00",
+        "mission_id": "default",
+        "event_type": "agent.builder.step",
+        "source": "Builder",
+        "agent": "Builder",
+        "message": "generated code",
+        "level": "info",
+        "confidence": 0.89,
+        "risk": "low",
+        "details": {}
+      }
+    ],
+    "skill_snapshot": {
+      "python_gui": {
+        "name": "python_gui",
+        "level": 1,
+        "confidence": 1.0,
+        "successes": 1,
+        "failures": 0,
+        "last_used": "2026-06-29T05:22:59Z"
+      }
+    },
+    "experience_records": 1,
+    "recommendations": [
+      "Promote repeated successful mission steps into reusable strategies."
+    ]
   }
 ]

@@ -695,7 +695,67 @@
       "created": "2026-07-02T05:34:48+00:00",
       "updated": "2026-07-02T05:34:48+00:00",
       "subgoals": []
+    },
+    {
+      "id": "goal_59_1782974591",
+      "title": "Respond to Adam said Buster",
+      "description": "Wake word detected by microphone",
+      "priority": 1.0,
+      "source": "ears",
+      "status": "active",
+      "progress": 0.0,
+      "created": "2026-07-02T06:43:11+00:00",
+      "updated": "2026-07-02T06:43:11+00:00",
+      "subgoals": []
+    },
+    {
+      "id": "goal_60_1782976207",
+      "title": "Respond to Adam said Buster",
+      "description": "Wake word detected by microphone",
+      "priority": 1.0,
+      "source": "ears",
+      "status": "active",
+      "progress": 0.0,
+      "created": "2026-07-02T07:10:07+00:00",
+      "updated": "2026-07-02T07:10:07+00:00",
+      "subgoals": []
+    },
+    {
+      "id": "goal_61_1782978880",
+      "title": "Respond to Adam said Buster",
+      "description": "Wake word detected by microphone",
+      "priority": 1.0,
+      "source": "ears",
+      "status": "active",
+      "progress": 0.0,
+      "created": "2026-07-02T07:54:40+00:00",
+      "updated": "2026-07-02T07:54:40+00:00",
+      "subgoals": []
+    },
+    {
+      "id": "goal_62_1783040960",
+      "title": "Respond to Adam said Buster",
+      "description": "Wake word detected by microphone",
+      "priority": 1.0,
+      "source": "ears",
+      "status": "active",
+      "progress": 0.0,
+      "created": "2026-07-03T01:09:20+00:00",
+      "updated": "2026-07-03T01:09:20+00:00",
+      "subgoals": []
+    },
+    {
+      "id": "goal_63_1783042795",
+      "title": "Respond to Adam said Buster",
+      "description": "Wake word detected by microphone",
+      "priority": 1.0,
+      "source": "ears",
+      "status": "active",
+      "progress": 0.0,
+      "created": "2026-07-03T01:39:55+00:00",
+      "updated": "2026-07-03T01:39:55+00:00",
+      "subgoals": []
     }
   ],
-  "updated": "2026-07-02T05:34:48+00:00"
+  "updated": "2026-07-03T01:39:55+00:00"
 }

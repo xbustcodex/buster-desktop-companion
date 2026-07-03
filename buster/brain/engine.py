@@ -3,6 +3,8 @@ from buster.intelligence.project_intelligence import ProjectIntelligence
 from buster.repository.intelligence_service import RepositoryIntelligenceService
 from buster.updater.manager import UpdateManager
 from buster.version import VERSION
+from buster.os_layer.os_layer import OSLayer
+from buster.workspace.runtime import WorkspaceSnapshot
 
 class BrainEngine:
     def __init__(self, services, bus, logger):
@@ -13,6 +15,27 @@ class BrainEngine:
 
     def process(self, text: str):
         cmd = text.strip().lower()
+
+        if cmd in [
+            "workspace",
+            "workspace snapshot",
+            "workspace status"
+        ]:
+            return WorkspaceSnapshot().snapshot()
+
+        if cmd=="git branch":
+            return WorkspaceSnapshot().git_branch()
+
+        if cmd=="git status":
+            return WorkspaceSnapshot().git_status()
+
+        if cmd=="python info":
+            return WorkspaceSnapshot().python_info()
+
+        os_reply = OSLayer().handle(text)
+        if os_reply is not None:
+            return os_reply
+
         if cmd in ["check updates", "update status", "latest release"]:
             return UpdateManager(current_version=VERSION).status_text()
 
