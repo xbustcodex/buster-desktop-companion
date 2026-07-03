@@ -1,0 +1,248 @@
+Current progress:
+
+✔ v3.0   Desktop Companion
+✔ v3.1   AI Planner
+✔ v3.1.1 Stability fixes
+✔ v3.2   AI OS Core
+✔ v3.2.1 AI OS Dashboard
+
+Based on your long-term goal—a modular AI operating environment with the AI Planner coordinating specialized agents—the next versions should build on the architecture you've already established instead of adding isolated features.
+
+v3.3 — Repository Intelligence
+
+Right now your analyzer gives statistics:
+
+Files
+Classes
+Functions
+Imports
+TODOs
+
+The next version should build a real knowledge graph of the project.
+
+Repository Intelligence
+
+Project Index
+
+├── Classes
+├── Functions
+├── Methods
+├── Imports
+├── Dependencies
+├── Call Graph
+├── Inheritance
+├── TODO Index
+├── Documentation
+├── Complexity
+└── Search
+
+Then Buster can answer things like:
+
+Show me every class using OpenCV.
+
+Where is Vision initialized?
+
+Which function writes to the database?
+
+Find dead code.
+
+Show every unused import.
+
+v3.4 — Agent Teams
+
+You already have
+
+Builder
+Tester
+Reviewer
+Fixer
+Verifier
+
+Now they should actually work together.
+
+Planner
+     │
+     ▼
+Builder
+     │
+     ▼
+Tester
+     │
+     ▼
+Reviewer
+     │
+     ▼
+Fixer
+     │
+     ▼
+Verifier
+
+Instead of one agent doing everything.
+
+v3.5 — AI Task Scheduler
+
+You already created the background job queue.
+
+Expand it into a real scheduler:
+
+Queued
+
+Running
+
+Waiting
+
+Paused
+
+Finished
+
+Cancelled
+
+Retry
+
+Priority
+
+with progress bars.
+
+Example:
+
+Build Android App
+
+█████████░░░░░░ 58%
+
+Current
+
+Writing SettingsActivity.kt
+
+ETA
+
+2m 14s
+v3.6 — Memory Engine
+
+Your memory system already exists.
+
+Upgrade it into searchable knowledge.
+
+Conversation Memory
+
+Project Memory
+
+Code Memory
+
+Hardware Memory
+
+Plugin Memory
+
+User Preferences
+
+Knowledge Graph
+v3.7 — Vision AI
+
+This matches the implementation priority you've previously chosen. Although you already have the vision module structure (camera, face detection, object detection, OCR, QR scanning, overlays, etc.), the next step is to make it a polished desktop feature rather than just backend code.
+
+Features:
+
+Live Webcam
+
+Object Detection
+
+OCR
+
+QR Scanner
+
+Snapshots
+
+Recording
+
+Face Recognition
+
+Overlay
+
+Tracking
+v4.0 — Buster Desktop AI
+
+This is where everything comes together.
+
+                   BUSTER AI
+
+        Planner
+
+      /    |     \
+
+ Builder Tester Reviewer
+
+      \    |     /
+
+   Fixer Verifier
+
+            |
+
+ Repository Intelligence
+
+            |
+
+ Vision  Voice  Memory
+
+            |
+
+ Plugins  Automation
+
+            |
+
+ Windows Desktop
+
+Imagine opening Buster and seeing:
+
+-------------------------------------------------
+BUSTER AI
+
+🙂 Good evening Adam
+
+Jobs
+──────────────
+✓ Repository indexed
+✓ Vision online
+✓ Memory loaded
+
+Current Project
+
+buster_desktop_companion
+
+Repository
+
+362 Files
+177 Python
+137 Classes
+416 Functions
+
+Planner
+
+Current Goal
+
+Implement Android plugin improvements
+
+Agent Team
+
+Builder    Running
+Tester     Waiting
+Reviewer   Idle
+Fixer      Idle
+Verifier   Ready
+
+Vision
+
+Camera Ready
+
+Memory
+
+18,240 knowledge entries
+
+CPU 12%
+
+RAM 740 MB
+
+-------------------------------------------------
+My recommendation
+
+I wouldn't jump straight to more UI polish yet. The strongest next step is v3.3 Repository Intelligence.
+
+Once Buster has a complete understanding of its own codebase—call graphs, dependencies, symbol search, and relationships—the Planner and Agent Team become much more capable because they can reason about the entire project instead of individual files. That foundation will also make later Vision, Voice, and automation features easier to integrate cleanly.

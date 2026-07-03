@@ -1,0 +1,44 @@
+1. AI Task Scheduler
+✅ Started
+You now have JobQueue + background jobs.
+❌ Not yet full scheduler with pause/cancel/retry/progress/notifications.
+
+2. Repository Understanding
+✅ Started
+You now have ProjectAnalyzer:
+362 files
+177 Python files
+137 classes
+416 functions
+340 imports
+56 TODOs
+❌ Not yet dependencies, call graph, tests index, symbol search.
+
+3. Real Memory
+⚠️ Partly existing
+You have:
+data/buster_memory.db
+data/knowledge_memory.json
+buster/memory/
+❌ Not yet connected into AI OS dashboard/searchable knowledge.
+
+4. Desktop Automation 2.0
+⚠️ Basic module exists:
+buster/automation/engine.py
+❌ Not yet advanced UI automation like Android Studio / Gradle watching.
+
+5. Builder Agent
+✅ Files exist:
+buster/agents/builder.py
+buster/agents/team.py
+❌ Needs stronger project-building loop: build → run → test → fix → verify.
+
+6. Buster Workspace
+✅ Yes, basic dashboard now exists.
+v3.2.1 added AI OS Dashboard.
+❌ Needs full live cards for Planner, Builder, Tester, Vision, Voice, CPU/RAM.
+
+7. Live Code Understanding
+✅ Started
+Project model can run in background.
+❌ Not automatic on project open yet, and not searchable enough.

@@ -1,0 +1,35 @@
+Buster v8.1 Polish + Release System
+
+1. Branding
+   - app icon
+   - window icon
+   - EXE icon
+   - installer icon
+
+2. Installer
+   - BusterSetup-8.1.exe
+   - desktop shortcut
+   - Start Menu shortcut
+   - uninstaller
+
+3. Auto updater
+   - check GitHub Releases
+   - compare latest version
+   - show update notice
+
+4. GitHub Actions
+   - build EXE automatically
+   - create release from tag
+   - upload Buster build
+
+5. Settings dialog
+   - AI provider selector
+   - voice settings
+   - theme options
+   - folder paths
+   - startup options
+
+6. Project indexing
+   - scan project files
+   - classes/functions/imports/TODOs
+   - ask Buster questions about the codebase

@@ -755,7 +755,55 @@
       "created": "2026-07-03T01:39:55+00:00",
       "updated": "2026-07-03T01:39:55+00:00",
       "subgoals": []
+    },
+    {
+      "id": "goal_64_1783043138",
+      "title": "Respond to Adam said Buster",
+      "description": "Wake word detected by microphone",
+      "priority": 1.0,
+      "source": "ears",
+      "status": "active",
+      "progress": 0.0,
+      "created": "2026-07-03T01:45:38+00:00",
+      "updated": "2026-07-03T01:45:38+00:00",
+      "subgoals": []
+    },
+    {
+      "id": "goal_65_1783045131",
+      "title": "Respond to Adam said Buster",
+      "description": "Wake word detected by microphone",
+      "priority": 1.0,
+      "source": "ears",
+      "status": "active",
+      "progress": 0.0,
+      "created": "2026-07-03T02:18:51+00:00",
+      "updated": "2026-07-03T02:18:51+00:00",
+      "subgoals": []
+    },
+    {
+      "id": "goal_66_1783049299",
+      "title": "Respond to Adam said Buster",
+      "description": "Wake word detected by microphone",
+      "priority": 1.0,
+      "source": "ears",
+      "status": "active",
+      "progress": 0.0,
+      "created": "2026-07-03T03:28:19+00:00",
+      "updated": "2026-07-03T03:28:19+00:00",
+      "subgoals": []
+    },
+    {
+      "id": "goal_67_1783058705",
+      "title": "Respond to Adam said Buster",
+      "description": "Wake word detected by microphone",
+      "priority": 1.0,
+      "source": "ears",
+      "status": "active",
+      "progress": 0.0,
+      "created": "2026-07-03T06:05:05+00:00",
+      "updated": "2026-07-03T06:05:05+00:00",
+      "subgoals": []
     }
   ],
-  "updated": "2026-07-03T01:39:55+00:00"
+  "updated": "2026-07-03T06:05:05+00:00"
 }

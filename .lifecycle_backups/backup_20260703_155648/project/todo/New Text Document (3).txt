@@ -1,0 +1,164 @@
+v3.3.3 Semantic Repository Graph
+
+Right now you have:
+
+Function
+↓
+
+File
+
+I would change it to:
+
+Project
+
+├── Files
+
+├── Classes
+
+│     ├── Methods
+
+│     └── Variables
+
+├── Functions
+
+├── Imports
+
+├── Dependencies
+
+├── Call Graph
+
+├── Inheritance
+
+├── TODOs
+
+├── Tests
+
+└── Documentation
+
+Instead of just indexing symbols, Buster would build relationships.
+
+Then Repository Intelligence becomes capable of things like
+
+Who calls VisionEngine.start()?
+
+Which classes inherit Agent?
+
+Show unused imports.
+
+Show circular imports.
+
+Which modules depend on OpenRouter?
+
+Find dead code.
+
+Generate project documentation.
+
+Which files import cv2?
+
+Which methods are never called?
+
+Show dependency tree.
+
+Export project map.
+
+That's a massive leap in usefulness.
+
+After that
+
+I'd build v3.4 Autonomous Agent Teams.
+
+Instead of
+
+Builder
+
+doing everything,
+
+the Planner becomes a real coordinator:
+
+Planner
+     │
+     ▼
+ Builder
+
+     │
+     ▼
+ Tester
+
+     │
+     ▼
+ Reviewer
+
+     │
+     ▼
+ Fixer
+
+     │
+     ▼
+ Verifier
+
+Each agent gets:
+
+its own task queue
+progress
+logs
+current file
+estimated completion
+retry count
+
+and the Planner orchestrates them.
+
+Then v3.5 becomes genuinely exciting
+
+Because Repository Intelligence will know the entire codebase, the Builder Agent can finally work at the project level instead of the file level.
+
+For example:
+
+Build me a weather app.
+
+Planner
+
+↓
+
+Builder
+
+Creates
+
+main.py
+weather.py
+api.py
+config.py
+ui.py
+settings.py
+requirements.txt
+README.md
+tests/
+
+↓
+
+Tester
+
+Runs
+
+↓
+
+Reviewer
+
+Checks quality
+
+↓
+
+Fixer
+
+Repairs errors
+
+↓
+
+Verifier
+
+Confirms success
+
+↓
+
+Planner
+
+Marks the task complete.
